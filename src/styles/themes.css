@@ -1,0 +1,68 @@
+/* Theme Variables */
+:root {
+  /* Light Theme (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --accent-primary: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border-color: #e5e7eb;
+}
+
+/* Dark Blue Theme */
+.dark-blue {
+  --bg-primary: #1e3a8a;
+  --bg-secondary: #1e40af;
+  --text-primary: #ffffff;
+  --text-secondary: #93c5fd;
+  --accent-primary: #3b82f6;
+  --accent-hover: #60a5fa;
+  --border-color: #2563eb;
+}
+
+/* Dark Black Theme */
+.dark-black {
+  --bg-primary: #000000;
+  --bg-secondary: #111827;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent-primary: #4b5563;
+  --accent-hover: #6b7280;
+  --border-color: #374151;
+}
+
+/* Apply Variables */
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.bg-theme-primary {
+  background-color: var(--bg-primary);
+}
+
+.bg-theme-secondary {
+  background-color: var(--bg-secondary);
+}
+
+.text-theme-primary {
+  color: var(--text-primary);
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary);
+}
+
+.border-theme {
+  border-color: var(--border-color);
+}
+
+.btn-accent {
+  background-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover);
+}
