@@ -1,0 +1,109 @@
+/* Theme Variables */
+:root {
+  /* Light Theme (Default) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+  --accent-primary: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border-color: #e5e7eb;
+}
+
+/* Dark Blue Theme */
+.dark-blue {
+  --bg-primary: #213555;
+  --bg-secondary: #1a2a44;
+  --text-primary: #ffffff;
+  --text-secondary: #94a3b8;
+  --accent-primary: #4f709c;
+  --accent-hover: #5c7fba;
+  --border-color: #2c446e;
+}
+
+/* Dark Black Theme */
+.dark-black {
+  --bg-primary: #000000;
+  --bg-secondary: #111827;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --accent-primary: #4b5563;
+  --accent-hover: #6b7280;
+  --border-color: #374151;
+}
+
+/* Apply Variables */
+.bg-theme-primary {
+  background-color: var(--bg-primary) !important;
+}
+
+.bg-theme-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+
+.text-theme-primary {
+  color: var(--text-primary) !important;
+}
+
+.text-theme-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.border-theme {
+  border-color: var(--border-color) !important;
+}
+
+.btn-accent {
+  background-color: var(--accent-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+.btn-accent:hover {
+  background-color: var(--accent-hover) !important;
+}
+
+/* Apply theme to all elements */
+body {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+}
+
+/* Inputs and form elements */
+input, select, textarea {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  border-color: var(--border-color);
+}
+
+/* Buttons */
+button {
+  background-color: var(--accent-primary);
+  color: var(--text-primary);
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+}
+
+/* Cards and containers */
+.bg-white {
+  background-color: var(--bg-primary) !important;
+}
+
+.dark\:bg-gray-800 {
+  background-color: var(--bg-secondary) !important;
+}
+
+/* Text colors */
+.text-gray-900 {
+  color: var(--text-primary) !important;
+}
+
+.text-gray-600 {
+  color: var(--text-secondary) !important;
+}
