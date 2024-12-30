@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "mysql2": "^3.9.2",
+    "bcryptjs": "^2.4.3",
+    "uuid": "^9.0.1"
+  }
+}
