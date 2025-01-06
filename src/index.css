@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Configurações base pro modo escuro */
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900 transition-colors duration-200;
+  }
+
+  /* Quando tiver a classe dark, muda as cores */
+  .dark body {
+    @apply bg-dark text-gray-100;
+  }
+
+  /* Estilo pros inputs e selects */
+  input, select, textarea {
+    @apply bg-white border-gray-200 dark:bg-dark-100 dark:border-dark-300 dark:text-gray-100;
+  }
+
+  /* Estilo pros botões */
+  button {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* Classes úteis pra usar no projeto */
+@layer components {
+  .card {
+    @apply bg-white dark:bg-dark-100 rounded-lg shadow-sm transition-colors duration-200;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-lg transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-accent-blue text-white hover:bg-blue-700 dark:hover:bg-blue-600;
+  }
+
+  .btn-secondary {
+    @apply bg-gray-200 text-gray-700 hover:bg-gray-300 dark:bg-dark-300 dark:text-gray-200 dark:hover:bg-dark-400;
+  }
+}
